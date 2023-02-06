@@ -1,0 +1,33 @@
+.catalog {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  .catalog__filter {
+    width: 20%;
+    .catalog__filter__widget {
+      margin-bottom: 2rem;
+      .catalog__filter__widget__title {
+        font-weight: 600;
+        font-size: 1.25rem;
+        text-transform: capitalize;
+        margin-bottom: 16px;
+      }
+      .catalog__filter__widget__content {
+        color: $txt-second-color;
+        .catalog__filter__widget__content__item {
+          margin-bottom: 14px;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+  .catalog__content {
+    flex: 1;
+  }
+  .catalog__notify{
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: $main-color;
+  }
+}

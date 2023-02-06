@@ -1,0 +1,38 @@
+.btn {
+  outline: none;
+  border: none;
+  color: $btn-main-color;
+  font-size: 1.5rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+
+  .btn__txt,
+  .btn__icon {
+    display: block;
+    transition: transform 0.5s ease;
+  }
+  .btn__txt {
+    padding: 1rem 2rem;
+  }
+  .btn__icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transform: translateX(-100%);
+  }
+  &.btn-animate:hover .btn__txt{
+      transform: translateX(100%);
+  }
+  &.btn-animate:hover .btn__icon{
+    transform: translateX(0%);
+  }
+}
