@@ -18,6 +18,7 @@ const Catalog = () => {
 
   const [products, setProducts] = useState(productList);
   const handleFilterSelect = (type, checked, item) => {
+    console.log(checked)
     if (checked) {
       switch (type) {
         case "CATEGORY":

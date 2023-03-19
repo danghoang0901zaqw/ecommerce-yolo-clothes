@@ -25,7 +25,7 @@ const ProductCard = ({ img01, img02, name, price, slug }) => {
         <Button
           size="sm"
           icon="bx bx-cart"
-          backgroundColor="blue "
+          backgroundColor="blue"
           animate={true}
           onClick={()=>dispatch(set(slug))}
         >

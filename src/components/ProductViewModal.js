@@ -24,7 +24,7 @@ const ProductViewModal = () => {
         <ProductDetail product={product} />
         <div className="product-view__modal__content__close">
           <Button size="sm" backgroundColor="blue" onClick={() => dispatch(remove())}>
-            đóng
+            Đóng
           </Button>
         </div>
       </div>

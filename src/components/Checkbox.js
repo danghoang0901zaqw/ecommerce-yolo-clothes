@@ -3,7 +3,7 @@ import React, { useRef } from "react";
 const Checkbox = ({ label, checked, onChange }) => {
   const inputRef = useRef();
   const handleChange = () => {
-    if (onChange  ) {
+    if (onChange) {
       onChange(inputRef.current);
     }
   };
